@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=prompt('1.서울 2.인천 3.강원도 4.전라도');
+        no=Number(no);
+        let result=null;
+
+        switch(no){
+            case 1: result="서울";
+            break;
+            case 2: result="인천";
+            break;
+            case 3: result="강원도";
+            break;
+            case 4: result="전라도";
+            break;
+            default: result="다시 입력바람";
+        }
+        
+        // if(no==1){
+        //     result = "seoul";
+        // }else if(no==2){
+        //     result = " inchun";
+        // }else if(no==3){
+        //     result = "gangwondo";
+        // }else if(no==4){
+        //     result = "junrado";
+        // }else{
+        //     reuslt = "다시 입력해주세요.";
+        // }
+
+        document.write("출생직역: "+result);
+    </script>
+</body>
+</html>

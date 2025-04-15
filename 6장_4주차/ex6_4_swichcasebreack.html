@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>계절판단프로그램</h3>
+    <script>
+        let month = prompt("달 입력시 계절을 알려줄게요.");
+        month=Number(month);
+        switch(month){
+            case 12:
+            case 1:
+            case 2:document.write("winter"); 
+            break;
+            case 3:
+            case 4:
+            case 5:document.write("spring"); 
+            break;
+            case 6:
+            case 7:
+            case 8:document.write("summer"); 
+            break;
+            case 9:
+            case 10:
+            case 11:document.write("fall"); 
+            break;
+            default: document.write("다시 입력하세요.");
+        }
+    </script>
+</body>
+</html>
