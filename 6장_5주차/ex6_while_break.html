@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // document.write("문자입력시 q자가 들어오면 끝내기");
+        // let input;
+        // while(input!='q'){
+        //     input=prompt("입력");
+        // }
+
+        //if문으로 바꾸기
+        while(1){
+            let ch=prompt("입력: ");
+            if(ch!='q'){
+                document.write("<br>입력하신 문자는 "+ch+" 입니다.<br>");   
+            }else if(ch=='q'){
+                document.write("<br>입력하신 문자는 "+ch+" 입니다.<br>");   
+                document.write("<br>멈춤.<br>");   
+                break;
+            }
+        }
+    </script>
+    
+</body>
+</html>

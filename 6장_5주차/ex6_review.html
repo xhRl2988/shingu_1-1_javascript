@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no =prompt("학년을 입력해주세요",1);
+        //입력받은값은 문자열이다
+        no=Number(no);
+        //이제부터 숫자
+        if(no==1){
+            document.write("장학금 대상입니다.<br>")
+        }else if(no==2){
+            document.write("군대 대상입니다.<br>")
+        }else if(no==3){
+            document.write("입사시험 대상입니다. <br>")
+        }else{
+            document.write("그럼 죽어. <br>")
+        }
+
+        switch(no){
+            case 1: document.write("장학금 대상입니다."); break;
+            case 2: document.write("군대 대상입니다."); break;
+            case 3: document.write("입사시험 대상입니다."); break;
+            default: document.write("그럼 죽어."); break;
+        }
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>우물에 빠진 날날</h1>
+    <script>
+      let distance = 0; //우물의 깊이
+      let count = 0;//꿀틀 횟수
+      while(distance<=100){
+          if(distance<51){
+               distance=distance+5-1;
+          }else{
+               distance=distance+5-2;
+          }
+          count=count+1;//count++
+      }  //while
+      document.write(count+"횟수만에 탈출!!!!~~~<br>");
+    </script>
+</body>
+</html>

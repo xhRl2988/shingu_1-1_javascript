@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(a,b){
+            let n=a+b;
+            return n;
+        }
+        function sub(a,b){
+            let n=a-b;
+            return n;
+        }
+        function mul(a,b){
+            let n=a*b;
+            return n;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let result;
+        result=add(14,20);
+        document.write("<br>result : "+result);
+        result=sub(14,20);
+        document.write("<br>result : "+result);
+        result=mul(14,20);
+        document.write("<br>result : "+result);        
+    </script>
+    <hr>
+    <h3>eval</h3>
+    <script>
+        let a="3+5*67*9";
+        document.write(a+"를 계산하시오.<br>");
+        a=eval(a);
+        document.write(a);
+    </script>
+</body>
+</html>

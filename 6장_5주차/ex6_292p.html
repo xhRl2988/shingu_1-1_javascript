@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=prompt("몇까지 합을 구해드릴까요?");
+        num=Number(num);
+        //num=parseInt(num);
+        let sum=0;
+        // for(let i=1; i<=num; i++){
+        //     sum=sum+i;
+        //     document.write(i+"번째 결과는 "+sum+"입니다. <br>");
+        // }
+        let j=1;
+        while(j<=num){
+            sum=sum+j;
+            document.write(j+"번째 결과는 "+sum+"입니다. <br>");
+            j++;
+        }
+
+    </script>
+</body>
+</html>

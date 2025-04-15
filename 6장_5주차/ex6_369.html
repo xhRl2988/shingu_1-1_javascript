@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let su=1; su<50; su=su+1){
+            if(su%3==0){
+                // document.write("짝")
+                continue; //건너뛰기 스킵
+            }else if(su==44){
+                break;//끝
+            }else{
+                document.write(su+" ");
+            }
+        }
+        document.write("<br>");
+        for(let i=0; i<100; i=i+3){
+            document.write(i+" ");
+        }
+    </script>
+</body>
+</html>
