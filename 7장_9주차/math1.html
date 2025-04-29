@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(let i=0; i<6; i++){
+        //     let no=Math.random()*46;
+        //     no=Math.floor(no);
+        //     document.write(no+"<br>")
+        // }
+
+
+
+        // let quiz=Math.floor(Math.random()*10)+"*"+
+        //         Math.floor(Math.random()*10)
+
+        // let ekq=prompt(quiz+"의 답은?");
+        // if(ekq==eval(quiz)){
+        //     document.write("정답입니다.<br>")
+        // }else{
+        //     document.write("오답입니다.<br>")
+        // }
+        // document.write("답은 "+eval(quiz)+" 입니다.");
+        
+
+
+        let quiz1=Math.floor(Math.random()*10);
+        let quiz2=Math.floor(Math.random()*10);
+        let quiz3=quiz1*quiz2;
+
+        let ekq=prompt(quiz1+"*"+quiz2+"의 답은?");
+        if(ekq==quiz3){
+            document.write("정답입니다.<br>")
+        }else{
+            document.write("오답입니다.<br>")
+        }
+        document.write("답은 "+quiz3+" 입니다.<br>");
+        document.write("당신은 "+ekq+" 을 입력했습니다.");
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[];     //1번 방식
+        let arr1=[1,2,3,4]
+        let array=new Array();  //2번 방식
+        let array1 = new Array(5);
+        let array2=new Array("Kim", "lee", "jung","park");
+        let array3=new Array("seoul", "inchen", "busan");
+        let result = array2.concat(array3); //arr 2개를 이어 붙임임
+        for(let i=0; i<result.length; i++){
+            document.write(result[i]+"<br>");
+        }
+        document.write("<hr>");
+        result = array2.join("@@");     // 문자 사이사이에 @@넣음음
+        for(let i=0; i<result.length; i++){
+            document.write(result[i]+"\t");
+        }
+        document.write("<hr>");
+        result = arr1.reverse();      //순서 거꾸로로
+        for(let i=0; i<result.length; i++){
+            document.write(result[i]+"\t");
+        }
+    </script>
+    
+</body>
+</html>
