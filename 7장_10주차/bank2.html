@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let bank2={
+            name:"kim hunysu",
+            code:111,
+            balance:1000,
+            inquery:function(){
+                return this.balance
+            },
+            deposite:function(money){
+                this.balance+=money;
+            },
+            widthow:function(money){
+                //문제 찾을돈이 잔액보다 많을때 어떻게 해야 될가 프로드래밍 하시오
+                if(this.balance>=money){
+                    this.balance-=money;
+                }else{
+                    document.write("<br> 잔액부족");
+                }
+                
+            }
+
+        }
+    </script>
+</head>
+<body>
+    
+    <script>
+        document.write("<br>잔액:"+bank2.balance);
+        document.write("<br>잔액:"+bank2.inquery());
+        bank2.deposite(5000);
+        document.write("<br>deposite(5000) 잔액:"+bank2.inquery());
+        bank2.widthow(5000);
+        document.write("<br>widthow(5000) 잔액:"+bank2.balance);
+
+
+
+    </script>
+    
+</body>
+</html>

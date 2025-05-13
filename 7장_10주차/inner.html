@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chage(){
+            let pp=document.querySelector("p");
+            // pp.innerHTML="나의 꿈은 딸기먹기입니다.";
+            pp.innerHTML="나의 꿈은 <img src='banana.png'>";
+        }
+        function out(){
+            let p=document.querySelector("p");
+            p.innerHTML="나의 꿈은 <img src='apple.png'>";
+        }
+    </script>
+</head>
+<body>
+    <!-- <p onclick="chage()"> -->
+    <p onmouseover="chage()" onmouseout="out()">
+        나의 꿈은 사과먹기입니다.
+    </p>
+</body>
+</html>

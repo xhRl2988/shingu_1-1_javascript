@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코어객체 vs 사용자객체만들기</title>
+    <script>
+        function select(){
+            return thts.balance;
+        }
+        function windhow(money){
+            this.balance-= money;
+        }
+        function deposite(money){
+            this.balance += money;
+        }
+        
+    </script>
+</head>
+<body>
+    <p>코어객체 vs 사용자객체만들기</p>
+    
+    <script>
+        let bank = new Object();        //Object
+        bank.owner = "kim gildong";
+        bank.code = "1-222";
+        bank.balance = 3000;
+        //잔액조회 메소드 만들기
+        bank.select = select;
+        bank.widhow = windhow;
+        bank.deposite = deposite;
+        document.write("<br> deposite후: "+bank.balance)
+        document.write("잔액:"+bank.select());
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        let a=new String("Boys and Girls");
+        document.write("<br> a.length: "+a.length);
+        document.write("<br> a.cherAt(3): "+a.charAt(3));
+
+        document.write("<br> a.concat'(합치기') "+ a.concat(" 콘서트"));     //concat(입력) a뒤에 추가로 입력
+        document.write("<br> a.indexOf() "+a.indexOf("s"));                 //indexOf(숫자) 는 a에서 몇번째에 있음?
+        document.write("<br> a.slice(5,3) "+a.slice(5,8));                  //slice(여기부터, 여기까지) 5부터 8까지 3개 가져오기
+        document.write("<br> a.slice(9,14) "+a.slice(9,14));                //slice(여기부터, 여기까지) 9부터 14까지 5개 가져오기
+        document.write("<br> a.substr(5,3) "+a.substr(5,3));                //substr(여기부터, 몇개 가져와) 5부터 시작해서 3개 가져와
+        document.write("<br> a.trim() "+a.trim());                          
+        
+        let b=new String("man and woman");
+        let bb=b.split(" ")                                                 //split("기준") (" ")<-이거는 공백을 기준으로 자름
+        document.write("<br> bb "+bb)                                       //split으로 자른거 출력
+        document.write("<br>")
+
+
+        let jumin="061222-3111111";
+        let gender=jumin.charAt(7);
+        document.write("<br> jumin.charAt(): "+jumin.charAt(7));
+        document.write("<br> gender:"+gender);
+        gender=Number(gender);
+        if(gender==1||gender==3){
+            document.write("<br>남성입니다.")
+        }else if(gender==2||gender==4){
+            document.write("<br>여성입니다.")
+        }else{
+            document.write("<br>외계인임?")
+        }
+    </pre>
+    <script>
+        let a=new String("Boys and Girls");
+        document.write("<br> a.length: "+a.length);
+        document.write("<br> a.cherAt(3): "+a.charAt(3));
+
+        document.write("<br> a.concat'(합치기') "+ a.concat(" 콘서트"));     //concat(입력) a뒤에 추가로 입력
+        document.write("<br> a.indexOf() "+a.indexOf("s"));                 //indexOf(숫자) 는 a에서 몇번째에 있음?
+        document.write("<br> a.slice(5,3) "+a.slice(5,8));                  //slice(여기부터, 여기까지) 5부터 8까지 3개 가져오기
+        document.write("<br> a.slice(9,14) "+a.slice(9,14));                //slice(여기부터, 여기까지) 9부터 14까지 5개 가져오기
+        document.write("<br> a.substr(5,3) "+a.substr(5,3));                //substr(여기부터, 몇개 가져와) 5부터 시작해서 3개 가져와
+        document.write("<br> a.trim() "+a.trim());                          
+        
+        let b=new String("man and woman");
+        let bb=b.split(" ")                                                 //split("기준") (" ")<-이거는 공백을 기준으로 자름
+        document.write("<br> bb "+bb)                                       //split으로 자른거 출력
+        document.write("<br>")
+
+
+        let jumin="061222-3111111";
+        let gender=jumin.charAt(7);
+        document.write("<br> jumin.charAt(): "+jumin.charAt(7));
+        document.write("<br> gender:"+gender);
+        gender=Number(gender);
+        if(gender==1||gender==3){
+            document.write("<br>남성입니다.")
+        }else if(gender==2||gender==4){
+            document.write("<br>여성입니다.")
+        }else{
+            document.write("<br>외계인임?")
+        }
+    </script>
+</body>
+</html>

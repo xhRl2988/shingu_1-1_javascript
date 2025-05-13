@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: beige;">
+    <pre>
+        let day=new Date();
+        if(day.getMinutes()%2==0){
+            document.body.style.backgroundColor="red";
+        }else{
+            document.body.style.backgroundColor="skyblue";
+        }
+
+        document.write("day:"+day);                     //싹다 나옴 한국 표준시간
+        document.write("<br>시간:"+day.toUTCString());  //시간
+        document.write("<br>년도:"+day.getFullYear());  //년도
+        document.write("<br>month:"+day.getMonth());    //월
+        document.write("<br>day:"+day.getDay());        //일
+        document.write("<br>시간:"+day.getHours());     //시간
+        document.write("<br>분:"+day.getMinutes());     //분
+        document.write("<br>초:"+day.getMilliseconds());//초
+
+    </pre>
+    <script>
+        let day=new Date();
+        if(day.getMinutes()%2==0){
+            document.body.style.backgroundColor="red";
+        }else{
+            document.body.style.backgroundColor="skyblue";
+        }
+
+        document.write("day:"+day);                     //싹다 나옴 한국 표준시간
+        document.write("<br>시간:"+day.toUTCString());  //시간
+        document.write("<br>년도:"+day.getFullYear());  //년도
+        document.write("<br>month:"+day.getMonth());    //월
+        document.write("<br>day:"+day.getDay());        //일
+        document.write("<br>시간:"+day.getHours());     //시간
+        document.write("<br>분:"+day.getMinutes());     //분
+        document.write("<br>초:"+day.getMilliseconds());//초
+
+    </script>
+</body>
+</html>
