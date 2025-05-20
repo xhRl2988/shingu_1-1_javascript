@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline;
+        }
+    </style>
+
+    <script>
+        function change(){
+            let divarr=document.getElementsByClassName("like");
+            for(let i=0; i<divarr.length; i++){
+                divarr[i].style.color="red";
+                divarr[i].style.backgroundColor="yellow";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h3>좋아하는 것들 <button onclick="change()">click</button></h3>
+    <hr>
+    나는 <div class="like">엑엑조디아 머리</div>    <div>aaaaa</div>
+         <div class="like">엑조디아 오른팔</div>  <div>bbbbb</div>
+         <div class="like">엑조디아 왼팔</div>    <div>ccccc</div>
+         <div class="like">엑조디아 왼다리</div>  <div>ddddd</div>
+         <div class="like">엑조디아 오른다리</div><div>eeeee</div>
+
+</body>
+</html>

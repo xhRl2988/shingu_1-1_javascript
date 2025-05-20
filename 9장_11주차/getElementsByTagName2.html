@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cange(){
+            let arr=document.getElementsByTagName('h2');
+            for(let i=0; i<arr.length; i++){
+                let data=arr[i]
+                arr[i].style.fontFamily="궁서";
+                data.style.color="red";
+                data.style.fontStyle="italic";
+            }
+        }
+    </script>
+
+    <h3>휴가장소 <button onclick="cange()">click</button></h3>
+    <hr>
+    7월에는 <h2>강</h2>에 가고싶지만 <h2>바다</h2>도 가고싶어요 
+    7월네는 <h2>강산</h2>이 있는 <h2>시골</h2>도 가고싶네요
+</body>
+</html>

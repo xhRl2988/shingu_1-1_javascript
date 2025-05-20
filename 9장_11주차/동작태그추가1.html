@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function change(){
+            let parent=document.getElementById("parent");
+            let tag=prompt("tag입력 ");
+            let newtag=document.createElement(tag);
+            let inner=prompt("출력할 문자를 입력")
+            newtag.innerHTML=inner;
+            let bg=prompt("배경색을 입력");
+            newtag.style.backgroundColor=bg;
+            parent.appendChild(newtag);
+        }
+    </script>
+</head>
+<body id="parent">
+    <p>나를 누르면 새 문자열이 생겨요 <button onclick="change()">click</button></p>
+    추가로 우리가 div태그가 무조건 적용한다.
+    키보드로 받아서 새 태그를 누를때마다 다르게 적용되도록 프로그래밍 하시오.
+    
+</body>
+</html>

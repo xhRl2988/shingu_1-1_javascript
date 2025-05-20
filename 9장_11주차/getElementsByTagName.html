@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function change(){
+            //span태그들을 배열로 받겠다.
+            let arr=document.getElementsByTagName("span");
+            for(let i=0; i<arr.length; i++){
+                arr[i].style.color="red";
+                arr[i].style.fontSize="30px";
+            }
+        }
+    </script>
+
+    <h3>내가 좋아하는 과일 <button onclick="change()">과일만 선택</button></h3>
+    <hr>
+    저는 봄 과일중 <span>딸기</span>를 좋아해요 <br>
+    친구는 <span>토마토</span>를 좋아해요<br>
+    우리 강아지는 <span>apple</span>를 좋아해요
+</body>
+</html>

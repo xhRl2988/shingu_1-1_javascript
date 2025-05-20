@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function answer(){
+            let exp=document.getElementById("식");
+            let result=eval(exp.value);
+            let p=document.getElementById("p");
+            p.innerHTML=result;
+        }
+    </script>
+    <form>
+        식: <input type="text" id="식" size="10">
+        <input onclick="answer()" type="button" value="답"><br>
+        <p id="p">답 영역</p>
+
+
+    </form>
+</body>
+</html>

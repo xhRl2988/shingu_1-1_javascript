@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(obj){
+            obj.style.backgroundColor="skyblue";
+            obj.style.fontWeight="bold";
+
+            obj.innerHTML="너는 <img width=50 height=50 src='media/mio.png'>친구다";
+        }
+        function change2(obj){
+            obj.style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <p onclick="change(this)" onmouseout="change2(this)">너는 나의 친구다.</p>
+
+    <p onclick="this.style.backgroundColor='yellow'; 
+    this.style.color='blue'"; 
+    onmouseover="this.style.backgroundColor='pink'";>나는 왕이다</p>
+</body>
+</html>

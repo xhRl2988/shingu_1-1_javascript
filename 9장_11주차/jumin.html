@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p =document.getElementById("p");
+        document.write(p +"<br>");
+        let gender ="061222-3111111";
+        gender=gender.charAt(7);
+        if(gender=='3' || gender=='1'){
+            document.write("man");
+            document.write("<br>안녕")
+        }else if(gender=='2' || gender=='4'){
+            document.write("woman");
+        }
+    </script>
+    <p id="p">061222-3111111</p>
+</body>
+</html>
