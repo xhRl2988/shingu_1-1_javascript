@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(a){
+            let b=document.getElementById("b")
+            b.src=a;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="fruit" value="media/apple.png" onclick="change(this.value)">사과
+        <input type="radio" name="fruit" value="media/banana.png" onclick="change(this.value)">바나나
+        <input type="radio" name="fruit" value="media/mango.png" onclick="change(this.value)">망고
+    </form> 
+    <img src="media/aicat1.webp" width="200px" height="200px" id="b">
+</body>
+</html>
